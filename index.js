@@ -26,9 +26,10 @@ module.exports = function (opt) {
     options.outExtension = opt.outExtension || '.html';
     options.doubleQuote = opt.doubleQuote || false;
     options.require = opt.require || false;
+    options.executable = opt.executable || 'haml';
 
     var file_contents = file.contents.toString('utf8');
-    var args = ['haml'];
+    var args = [options.executable];
     args.push('-s');
     if (options.doubleQuote) {
       args.push('-q');

@@ -11,6 +11,9 @@ installed to use this. Try `gem install haml`. If you use
 Pass `{doubleQuote: true}` to use `"` around HTML attributes instead of `'`.
 This uses the `-q`/`--double-quote-attributes` option with `haml`.
 
+Use the `executable` option to pass in a custom location for `haml`, e.g.:
+`{executable: './bin/haml'}` or `{executable: 'bundle exec haml'}`
+
 ## gulpfile.js example
 
     var gulp = require('gulp');
